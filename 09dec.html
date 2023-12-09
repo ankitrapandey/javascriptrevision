@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hindi= parseInt(prompt("enter  hindi number"));
+        let english=parseInt(prompt("enter english number"));
+        let math=parseInt(prompt("enter math number"));
+        let science=parseInt(prompt("enter sciencenumber"));
+        let total=hindi+english+math+science;
+
+        document.write("hindi= ",hindi,"<br>");
+        document.write("english= ",english,"<br>");
+        document.write("math= ",math,"<br>");
+        document.write("science= ",science,"<br>");
+        document.write("total = ",total,"<br>");
+
+        let average=50
+       
+            document.write("average = ",average,"<br>" );
+            percentage =total/400*100;
+            document.write("percentage",percentage,"<br>")
+            if(percentage>=90&&percentage<=100){
+                document.write("a grade <br>");
+            }
+            else if(percentage>=60||percentage<=90){
+                document.write("b grade<br>")
+            }
+            else {
+                document.write("hello")
+            }
+            
+    </script>
+</body>
+</html>

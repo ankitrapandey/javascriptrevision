@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // <!-- -----------------------function basic Q.1-------------------------------------------------
+
+        // function caclulateSquare(a) {
+        //     b = a * a
+        //     document.write(b)
+        // }
+        // caclulateSquare(5)
+
+        // ----------------------------------Q.2----------------------------------------------------
+
+        // function caclulateSquare(a) {
+        //     b = a * a
+        //     document.write(b)
+        // }
+        // caclulateSquare(6)
+
+        // -----------------------------function parameter and default------------------------------------
+
+        // -----------------------------------------Q.1---------------------------------------------------
+
+        // function greetUser() {
+        //     document.write("happy merry christmas")
+        // }
+        // greetUser();
+
+        // ------------------------------------Q.2------------------------------------------------
+
+        // function add(a,b){
+        //     c=a*b
+        //     document.write(c)
+        // }
+        // add(4,5)
+
+        //     // ----------------------------------------function scope------------------------------------------
+
+        // var name="ankit";
+        // document.write(name,"<br>")
+
+        //   function explore(){
+        //     var name="hello!"
+        //     document.write(name)
+        //   }
+
+        //   explore()
+
+        // --------------------------------------high-order function Q.1------------------------------------
+
+        //     function operateonnumbers(num1,num2,callback){
+        //         return callback(num1,num2);
+        //     }
+        // // example callback function
+        // function add(a,b){
+        //     return a+b;
+        // }
+        // document.write(operateonnumbers(5,4, add),"<br>");
+
+        // function subtract(a,b){
+        //     return a-b;
+        // }
+        // document.write(operateonnumbers(9,4,subtract),"<br>");
+
+        // function multiply(a,b){
+        //     return a*b;
+        // }
+        // document.write(operateonnumbers(5,10, multiply),"<br>");
+
+        // ---------------------------------------Q.2--------------------------------------------
+
+        // function operateonnumbers(num1, num2, callback) {
+        //     return callback(num1, num2);
+        // }
+
+        // function divide(a, b) {
+        //     return a / b
+        // }
+        // document.write(operateonnumbers(50, 5, divide),"<br>");
+
+        // function modules(a, b) {
+        //     return a % b
+        // }
+        // document.write(operateonnumbers(60, 5, modules));
+
+        // --------------------------recursive function----------------------------------
+        // function factorial(n) {
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     }
+        //     else {
+        //         return n * factorial(n - 1);
+        //     }
+        // }
+        // let number=5;
+        // let result=factorial(number);
+        // document.write(`the factorial of ${number} is ${result}`)
+
+        // -------------------------------------------Q.2---------------------------------
+
+        // function factorial(n) {
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     }
+        //     else {
+        //         return n * factorial(n - 1);
+        //     }
+        // }
+        // let value = [2, 3, 4, 5, 6]
+        // value.forEach(value =>{
+        //     let result=factorial(value);
+        //     document.write(`the factorial of ${value} is ${result}&nbsp`)
+
+        // });
+
+        
+        // ------------------------------------------callback Q.1--------------------------------------
+
+        // function processArray(arr, callback) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         callback(arr[i]);
+        //     }
+        // }
+        // const myArray = [1, 2, 3, 4, 5];
+        // processArray(myArray, callback);
+
+        // function callback(element) {
+        //     document.write(element * 2);
+        // }
+
+        // ------------------------------------------Q.2--------------------------------------
+        //     let numbers = [1, 2, 3, 4, 5];
+
+        //     // Callback function to square each element
+        //     let square = (num) => num * num;
+        //     let squaredNumbers = numbers.map(square);
+
+        //    document.write(squaredNumbers);
+
+        // -----------------------------arrow function Q.1----------------------------------------
+
+        // let calculateSquare = (num) => num * num;
+        // let number = 5;
+        // const squared = calculateSquare(number);
+        // document.write(squared);
+
+
+        // ----------------------------------------------------- object method Q.1-----------------------------------------
+        // Define the car object
+        // let car = {
+        //     make: 'Toyota',
+        //     model: 'Corolla',
+        //     year: 2022,
+        //     // Method to display car information
+        //     displayInfo: function () {
+        //         console.log(`Car: ${this.make} ${this.model} ${this.year}`);
+        //     }
+        // };
+
+        // // Display the car information
+        // car.displayInfo(); // This will print: Car: Toyota Corolla 2022
+
+        // --------------------------------------------Q.2------------------------------------------
+
+        // let Car = {
+        //     make: 'Ford',
+        //     model: 'Mustang',
+        //     year: 2023,
+        //     // Method to display car information
+        //     displayInfo: function () {
+        //         console.log(`Car: ${this.make} ${this.model} ${this.year}`);
+        //     }
+        // };
+
+        // // Display the details of the anotherCar
+        // Car.displayInfo(); // This will print: Car: Ford Mustang 2023
+
+        
+        // ---------------------------Array basic Q.1-----------------------------------
+
+        // let favoriteColors = ['blue', 'green', 'purple', 'yellow'];
+        // console.log(favoriteColors);
+
+        // ---------------------------------Q.2----------------------------------------------
+
+        // let favoriteColors = ['black', 'brown', 'orange', 'pink'];
+        // console.log(favoriteColors);
+
+        // ---------------------------------------Array method Q.1------------------------------------
+
+        // let favoriteColors = ['blue', 'green', 'purple', 'yellow'];
+        // favoriteColors.push("red")
+        // console.log(favoriteColors);
+
+        // --------------------------------------Q.2--------------------------------------
+
+        // let favoriteColors = ['blue', 'green', 'purple', 'yellow'];
+        // favoriteColors.pop()
+        // console.log(favoriteColors);
+
+        // ----------------------------------Array iteraion Q.1-------------------------------
+        // function filterNumbers(arr) {
+        //     return arr.filter(item => typeof item === 'number');
+        // }
+
+        // // Example usage:
+        // let mixedArray = [1, 'hello', 3.14, 'world', 7, true, 9, false];
+        // let numbersOnly = filterNumbers(mixedArray);
+
+        // console.log(numbersOnly);
+
+        // ----------------------------------------Q.2----------------------------------
+        // function filterNumbers(arr) {
+        //     return arr.filter(item => typeof item === 'number');
+        // }
+        // let mixedArray = [2, 'ankit', 4.14, 'hello', 5, false, 2, true];
+        // let numbersOnly = filterNumbers(mixedArray);
+
+        // document.write(mixedArray);
+
+
+        // -----------------------------------------Array storing Q.1-----------------------------
+
+        // let array=["mango","banana","orange","apple"]
+        // let y=array.sort()
+        // document.write(array)
+
+        // -----------------------------------------Q.2--------------------------------------
+        // let array = ["suryanshu", "aman", "ankit", "prabhat"]
+        // let y = array.sort()
+        // document.write(array)
+
+        // -------------------------------------Array manipulation Q.1 -----------------------------
+
+        // function reverse(array) {
+        //     for (let i = array.length-1; i >= 0; i--) {
+        //         document.write(array[i],"&nbsp");
+        //     }
+        // }
+        // reverse([1, 2, 3, 4, 5]);
+
+        // ----------------------------------------------Q.2------------------------------------
+        // function reverse(array) {
+        //     for (let i = array.length-1; i >= 0; i--) {
+        //         document.write(array[i],"&nbsp");
+        //     }
+        // }
+        // reverse([10,11,12,13,14,15,16]);
+
+        // ----------------------------------Array Mapping Q.1 ----------------------------------
+
+        // function doubleNumbers(number) {
+        //     let a = [];
+        //     for (let i = 0; i < number.length; i++) {
+        //         document.write(number[i] * 2, "&nbsp");
+        //     }
+        // }
+        // doubleNumbers([1, 2, 3, 4, 5]);
+
+        // ------------------------------------Q.2-------------------------------------------------
+
+        // function doubleNumbers(number) {
+        //     let a = [];
+        //     for (let i = 0; i < number.length; i++) {
+        //         document.write(number[i] * 2, "&nbsp");
+        //     }
+        // }
+        // doubleNumbers([2,4,6,8,10]);
+
+        // ---------------------------------Array reducing Q.1-------------------------------------
+        // function sumArray(number){
+        //     let sum=0;
+        //     for(let i=0;i<number.length;i++){
+        //         sum+=number[i]
+
+        //     }
+        //     document.write(sum)
+        // }
+        // sumArray([1,2,3,4,5,6])
+
+        // ------------------------------------------Q.2---------------------------------------------
+
+        // function sumArray(number){
+        //         let sum=0;
+        //         for(let i=0;i<number.length;i++){
+        //             sum+=number[i]
+
+        //         }
+        //         document.write(sum)
+        //     }
+        //     sumArray([2,4,6,8,10])
+
+        // --------------------------------Array searching Q.1 -------------------------------------
+
+        // let numbers = [1, 2, 3, 4, 5];
+        // let targetElement = 7;
+        // let ElementFound = findElement(numbers, targetElement);
+
+        // function findElement(arr, target) {
+
+        //   for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] === target) {
+        //         return true;
+        //     }
+        //   }
+        //   return false;
+        // }
+
+        // document.write(ElementFound)
+
+        // -----------------------------------------Q.2------------------------------------------
+
+        // let numbers = [7, 8, 9, 10, 11];
+        // let targetElement = 7;
+        // let ElementFound = findElement(numbers, targetElement);
+
+        // function findElement(arr, target) {
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i] === target) {
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
+
+        // document.write(ElementFound)
+
+        // -------------------------------Array splicing Q.1-----------------------------------
+
+        // let array=["orange","apple","mango","banana"]
+        // document.write(array)
+
+        // ---------------------------------------Q.2------------------------------------------
+
+        // let a = ["mango", "orange", "banana", "papaya"]
+        // let middle=a.length/2;
+        // a.splice(middle-1,2,"apple","graps");
+        // document.write(a);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

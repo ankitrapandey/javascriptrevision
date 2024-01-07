@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ---------------------------map method---------------------------------
+         // let array=[12,14,15,16,18,20];
+        // let newarray= array.map((value)=>{
+        //     // return value*value;  
+        //     return value *2;
+
+        // });
+        // console.log(newarray);
+
+         // ------------------------------------callback function---------------------------
+
+        // function processArray(arr, callback) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         callback(arr[i]);
+        //     }
+        // }
+        // let myArray = [1, 2, 3, 4, 5];
+        // processArray(myArray, callback);
+
+        // function callback(element) {
+        //     document.write(element * 2);
+        // }
+
+
+        // -------------------------------------for in loop --------------------------------
+        //  car = {
+        //     brand: 'Toyota',
+        //     model: 'Corolla',
+        //     year: 2022
+        // };
+
+        // for (let a in car) {
+        //     console.log(car[a]);
+        // }
+
+        // --------------------------------higher-order funtion----------------------
+
+        // function callbackfunction(a,b){
+        //     console.log(" callback function",a*b);
+        // }
+        // function higherorder(fun){
+        //     fun(28,10)
+        //     console.log("higher order fuction");
+        // }
+        // higherorder(callbackfunction);
+
+
+        // -----------------------------------spread operator--------------------------------
+        // let arr1 = [1, 2, 3];
+        // let arr2 = [4, 5, 6];
+
+        // let newarr = [...arr1, ...arr2];
+
+        // console.log(newarr); 
+
+        // ------------------------------------------compose function-------------------------------
+
+        // let compose = (...functions) => input => functions.reduceRight((acc, func) => func(acc), input);
+        // let add = x => x + 2;
+        // let multiply = x => x * 3;
+        // let subtract = x => x - 10
+        // let composedFunction = compose(subtract, multiply, add);
+        // console.log(composedFunction(8))
+
+        // let compose = (...functions) => input => functions.reduce((acc, func) => func(acc), input);
+        // let add = x => x + 2;
+        // let multiply = x => x * 3;
+        // let subtract = x => x - 10
+        // let composedFunction = compose(subtract, multiply, add);
+        // console.log(composedFunction(8))
+
+        // ---------------------------------------closure function -------------------------
+
+        // function Func() {
+        //     let name = "Ankit";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     return displayName;
+        // }
+
+        // const myFunc = Func();
+        // myFunc();
+
+
+        // -------------------------------------Lexical scope------------------------------
+        // function my() {
+        //     let name = "Ankit";
+        //     function displayName() {
+
+        //         console.log(name);
+        //     }
+        //     displayName();
+        // }
+        // my();
+
+
+    </script>
+</body>
+</html>
